@@ -8,8 +8,6 @@ namespace ConsoleApp1
         {
             Program pr = new Program();
             int[] array = pr.GeneratorSortArray(1000, 1000);
-            pr.PrintArray(array);
-            Console.WriteLine(" ");
             Console.Write(pr.BinarySearch(array, 505));
             Console.ReadLine();
         }
@@ -41,6 +39,5 @@ namespace ConsoleApp1
             Array.Sort(array);
             return array;
         }
-        void PrintArray(int[] array) { foreach (int item in array) { Console.Write($"{item} "); } }
     }
 }
